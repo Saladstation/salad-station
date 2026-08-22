@@ -45,6 +45,18 @@ const bildZuordnung = {
     "ü": "ü_20260822145752.png"
 };
 
+function testBild() {
+    const ergebnis = document.getElementById("ergebnis");
+
+    const bild = document.createElement("img");
+    bild.src = "symbole/" + bildZuordnung["Ś"];
+    bild.alt = "Test";
+
+    ergebnis.innerHTML = "";
+    ergebnis.appendChild(bild);
+}
+
+
 function umwandeln() {
     let text = document.getElementById("eingabe").value.toLowerCase();
 
